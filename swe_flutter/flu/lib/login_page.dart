@@ -37,8 +37,8 @@ class _LoginPageState extends State<LoginPage> {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: <Color>[
-                      Color(0xFF6E14FF),
-                      Color(0xFF5F5F5F)
+                      Color(0xFF6E15FF),
+                      Color(0xFF720094)
                     ])
             ),
           ),
@@ -55,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
                     margin: EdgeInsets.all(50.0),
                     // color: Colors.white,
                     decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Colors.purple.shade50,
                         borderRadius: BorderRadius.circular(20.0)),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -99,10 +99,11 @@ class _LoginPageState extends State<LoginPage> {
                           height:25,
                         ),
                         TextField(
+                          obscureText: true,
                           decoration: InputDecoration(
                             labelText: 'Password',
                             prefixIcon: const Icon(Icons.security),
-                            
+
                           ),
                           onChanged: (String value){
                             password=value;
@@ -192,7 +193,7 @@ class _LoginPageState extends State<LoginPage> {
                     margin: EdgeInsets.all(50.0),
                     // color: Colors.white,
                     decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Colors.purple.shade50,
                         borderRadius: BorderRadius.circular(20.0)),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -238,6 +239,7 @@ class _LoginPageState extends State<LoginPage> {
                           height:25,
                         ),
                         TextField(
+                          obscureText: true,
                           decoration: InputDecoration(
                             labelText: 'Password',
                             prefixIcon: const Icon(Icons.security),
